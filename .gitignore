@@ -41,3 +41,5 @@ dist/
 
 # Node
 node_modules/
+
+*.pyc

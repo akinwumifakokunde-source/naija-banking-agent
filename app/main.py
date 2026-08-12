@@ -17,6 +17,7 @@ from app.api.branches import router as branches_router
 from app.api.services import router as services_router
 from app.api.appointments import router as appointments_router
 from app.api.availability import router as availability_router
+from app.api.agent import router as agent_router
 
 
 Base.metadata.create_all(bind=engine)
@@ -34,6 +35,7 @@ app.include_router(branches_router)
 app.include_router(services_router)
 app.include_router(availability_router)
 app.include_router(appointments_router)
+app.include_router(agent_router)
 
 
 @app.get("/")
